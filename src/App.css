@@ -1,4 +1,85 @@
 body{
   margin:0;
+  background:#0f172a;
   font-family:sans-serif;
+}
+
+.app{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.glass{
+  width:350px;
+  height:650px;
+  background:rgba(255,255,255,.1);
+  backdrop-filter:blur(20px);
+  border-radius:40px;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.bear{
+  font-size:140px;
+  margin-top:50px;
+}
+
+.mouth{
+  width:40px;
+  height:15px;
+  background:#111;
+  border-radius:20px;
+  margin:auto;
+}
+
+.wave{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  margin-top:40px;
+}
+
+.wave span{
+  width:8px;
+  height:40px;
+  background:#ff69b4;
+  border-radius:20px;
+  animation:wave 1s infinite;
+}
+
+.wave span:nth-child(2){
+  animation-delay:.2s;
+}
+
+.wave span:nth-child(3){
+  animation-delay:.4s;
+}
+
+.wave span:nth-child(4){
+  animation-delay:.6s;
+}
+
+@keyframes wave{
+  50%{
+    height:80px;
+  }
+}
+
+.buttons{
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.buttons button{
+  width:70px;
+  height:70px;
+  border:none;
+  border-radius:50%;
+  background:#ff69b4;
+  color:white;
 }
